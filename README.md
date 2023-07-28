@@ -6,7 +6,7 @@ This template provides a blank new Symfony 6.x application working with Docker s
 
 ## Components
 
-- PHP 8.1 with Composer 2
+- PHP FPM 8.2 with Composer 2
 - NGINX 1.21
 - PostgreSQL (opened to host SQL Clients)
 - Mailhog
@@ -23,9 +23,9 @@ To launch the project, simply clone it locally and run the following command :
 
 ```shell
 cd applicationName
-
+cp .env.example .env
 docker-compose up -d
-docker-compose exec php composer install
+docker-compose exec CONTAINER_ID composer install
 ```
 
 That's all ! Your application should be accessible through : `http://localhost:8000` 👍
