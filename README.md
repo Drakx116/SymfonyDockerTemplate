@@ -6,7 +6,7 @@ This template provides a blank new Symfony 6.x application working with Docker s
 
 ## Components
 
-- PHP FPM 8.2 with Composer 2
+- PHP FPM 8.3 with Composer 2
 - NGINX 1.21
 - PostgreSQL (opened to host SQL Clients)
 - Mailhog
