@@ -20,7 +20,7 @@ services:
       - './.docker/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro'
 
   db:
-    image: postgres
+    image: postgres:16.2
     restart: always
     ports:
       - '5432:5432'
