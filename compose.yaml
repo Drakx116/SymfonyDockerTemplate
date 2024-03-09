@@ -7,9 +7,8 @@ services:
       dockerfile: Dockerfile
     ports:
       - "9000:9000"
-    user: "1000:1000"
     volumes:
-      - ./server:/var/www/server
+      - ./:/app
 
   nginx:
     image: nginx:1.21.0-alpine
@@ -17,7 +16,7 @@ services:
     ports:
       - "8000:80"
     volumes:
-      - ./server:/var/www/server
+      - ./:/app
       - './.docker/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro'
 
   db:
@@ -27,6 +26,10 @@ services:
       - '5432:5432'
     env_file:
       - ./.env
+    environment:
+        POSTGRES_DB: ${POSTGRES_DB:-app}
+        POSTGRES_USER: ${POSTGRES_USER:-root}
+        POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-password}
     volumes:
       - db:/var/lib/postgresql/data
 
