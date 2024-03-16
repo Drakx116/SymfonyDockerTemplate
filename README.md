@@ -2,28 +2,28 @@
 
 ## Introduction  📋
 
-This template provides a blank new Symfony 6.x application working with Docker support. ✅
+This template provides a blank new Symfony 7.x application working with Docker support. ✅
 
 ## Components
 
 - PHP FPM 8.3 with Composer 2
 - NGINX 1.21
-- PostgreSQL (opened to host SQL Clients)
+- PostgreSQL 16 (opened to host SQL clients)
 - Mailhog
 
 # Packages
 
 Some packages have already been installed to help you and spare time :
+- Doctrine Budnle (with a ready to use PostgreSQL 16 integration)
+- PHPUnit Bundle
 - Maker Bundle
-- ORM (with PostgreSQL integration)
 
 ## Installation ⚙
 
-To launch the project, simply clone it locally and run the following command :
+To launch the project, simply clone it locally and run the following commands :
 
 ```shell
 cd applicationName
-cp .env.example .env
 docker-compose up -d
 docker-compose exec CONTAINER_ID composer install
 ```
