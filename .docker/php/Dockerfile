@@ -25,7 +25,7 @@ RUN composer --version
 RUN rm /etc/localtime
 RUN ln -s /usr/share/zoneinfo/Europe/Paris /etc/localtime
 
-WORKDIR /var/www/server
+WORKDIR /app
 
 # Make every files owned by current user instead of Docker
-COPY --chown=1000:1000 . /var/www/server
+COPY --chown=1000:1000 . /app
