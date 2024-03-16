@@ -65,12 +65,6 @@
     "doctrine/sql-formatter": {
         "version": "1.1.2"
     },
-    "friendsofphp/proxy-manager-lts": {
-        "version": "v1.0.6"
-    },
-    "laminas/laminas-code": {
-        "version": "4.5.1"
-    },
     "nikic/php-parser": {
         "version": "v4.13.2"
     },
@@ -194,9 +188,6 @@
     },
     "symfony/polyfill-php81": {
         "version": "v1.24.0"
-    },
-    "symfony/proxy-manager-bridge": {
-        "version": "v6.0.3"
     },
     "symfony/routing": {
         "version": "6.2",

@@ -14,7 +14,6 @@
         "symfony/dotenv": "7.0.*",
         "symfony/flex": "^2",
         "symfony/framework-bundle": "7.0.*",
-        "symfony/proxy-manager-bridge": "6.4.*",
         "symfony/runtime": "7.0.*",
         "symfony/yaml": "7.0.*"
     },
