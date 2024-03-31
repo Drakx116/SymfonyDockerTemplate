@@ -3,4 +3,5 @@ grumphp:
     EXEC_GRUMPHP_COMMAND: 'sh grumphp.sh'
   tasks:
     composer:
-        with_dependencies: true
+      with_dependencies: true
+    phpcsfixer: ~
