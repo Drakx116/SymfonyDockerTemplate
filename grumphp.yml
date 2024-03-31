@@ -6,8 +6,5 @@ grumphp:
       with_dependencies: true
     phpcsfixer: ~
     phpmd:
-      whitelist_patterns: []
-      exclude: ['vendor']
-      report_format: text
-      ruleset: ['cleancode', 'codesize', 'naming']
+      ruleset: ['phpmd.xml']
       triggered_by: ['php']
