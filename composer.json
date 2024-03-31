@@ -1,4 +1,7 @@
 {
+    "name": "drakx116/symfony-docker-template",
+    "description": "Personal Docker template for Symfony 7.0",
+    "version": "0.2.1",
     "type": "project",
     "license": "proprietary",
     "minimum-stability": "stable",
@@ -7,17 +10,21 @@
         "php": ">=8.3",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "doctrine/doctrine-bundle": "^2.5",
+        "doctrine/doctrine-bundle": "^2.12",
         "doctrine/doctrine-migrations-bundle": "^3.2",
-        "doctrine/orm": "^2.11",
+        "doctrine/orm": "^3.1",
         "symfony/console": "7.0.*",
         "symfony/dotenv": "7.0.*",
         "symfony/flex": "^2",
         "symfony/framework-bundle": "7.0.*",
+        "symfony/monolog-bundle": "^3.10",
         "symfony/runtime": "7.0.*",
         "symfony/yaml": "7.0.*"
     },
     "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.52",
+        "phpmd/phpmd": "^2.15",
+        "phpro/grumphp": "^2.5",
         "phpunit/phpunit": "^9.6",
         "roave/security-advisories": "dev-latest",
         "symfony/browser-kit": "7.0.*",
@@ -29,7 +36,8 @@
         "allow-plugins": {
             "composer/package-versions-deprecated": true,
             "symfony/flex": true,
-            "symfony/runtime": true
+            "symfony/runtime": true,
+            "phpro/grumphp": true
         },
         "optimize-autoloader": true,
         "preferred-install": {

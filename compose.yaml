@@ -2,6 +2,7 @@ version: "3.9"
 
 services:
   php:
+    container_name: symfony-docker-template
     build:
       context: .docker/php
       dockerfile: Dockerfile
