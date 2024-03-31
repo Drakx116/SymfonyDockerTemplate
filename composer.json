@@ -1,4 +1,7 @@
 {
+    "name": "drakx116/symfony-docker-template",
+    "description": "Personal Docker template for Symfony 7.0",
+    "version": "0.2.1",
     "type": "project",
     "license": "proprietary",
     "minimum-stability": "stable",

@@ -1,0 +1,6 @@
+grumphp:
+  git_hook_variables:
+    EXEC_GRUMPHP_COMMAND: 'sh grumphp.sh'
+  tasks:
+    composer:
+        with_dependencies: true
