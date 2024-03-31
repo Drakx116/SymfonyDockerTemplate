@@ -19,6 +19,7 @@
         "symfony/yaml": "7.0.*"
     },
     "require-dev": {
+        "phpro/grumphp": "^2.5",
         "phpunit/phpunit": "^9.6",
         "roave/security-advisories": "dev-latest",
         "symfony/browser-kit": "7.0.*",
@@ -30,7 +31,8 @@
         "allow-plugins": {
             "composer/package-versions-deprecated": true,
             "symfony/flex": true,
-            "symfony/runtime": true
+            "symfony/runtime": true,
+            "phpro/grumphp": true
         },
         "optimize-autoloader": true,
         "preferred-install": {
