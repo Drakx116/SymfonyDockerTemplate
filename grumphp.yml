@@ -5,3 +5,9 @@ grumphp:
     composer:
       with_dependencies: true
     phpcsfixer: ~
+    phpmd:
+      whitelist_patterns: []
+      exclude: ['vendor']
+      report_format: text
+      ruleset: ['cleancode', 'codesize', 'naming']
+      triggered_by: ['php']
