@@ -62,6 +62,18 @@
     "doctrine/sql-formatter": {
         "version": "1.1.2"
     },
+    "friendsofphp/php-cs-fixer": {
+        "version": "3.52",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "3.0",
+            "ref": "be2103eb4a20942e28a6dd87736669b757132435"
+        },
+        "files": [
+            ".php-cs-fixer.dist.php"
+        ]
+    },
     "nikic/php-parser": {
         "version": "v4.13.2"
     },

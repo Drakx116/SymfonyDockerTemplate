@@ -22,6 +22,7 @@
         "symfony/yaml": "7.0.*"
     },
     "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.52",
         "phpro/grumphp": "^2.5",
         "phpunit/phpunit": "^9.6",
         "roave/security-advisories": "dev-latest",
