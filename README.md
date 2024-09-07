@@ -22,9 +22,10 @@ Some packages have already been installed to help you and spare time :
 To launch the project, simply clone it locally and run the following commands :
 
 ```shell
+git clone https://github.com/Drakx116/SymfonyDockerTemplate.git applicationName
 cd applicationName
 docker-compose up -d
-docker-compose exec CONTAINER_ID composer install
+docker-compose exec symfony-docker-template composer install
 ```
 
-That's all ! Your application should be accessible through : `http://localhost:8000` 👍
+That's all ! Your application should be accessible through : `https://localhost` 👍
