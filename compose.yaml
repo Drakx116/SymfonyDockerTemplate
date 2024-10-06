@@ -30,15 +30,6 @@ services:
     volumes:
       - db:/var/lib/postgresql/data
 
-  mailhog:
-    image: mailhog/mailhog
-    restart: on-failure
-    ports:
-      - "1025:1025"
-      - "8025:8025"
-    logging:
-      driver: 'none'
-
 volumes:
   caddy_data:
   caddy_config:
