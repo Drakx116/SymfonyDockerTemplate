@@ -8,7 +8,6 @@ This template provides a blank new Symfony 7.x application working with Docker s
 
 - FrankenPHP with bundled PHP version (OPcache & xDebug)
 - PostgreSQL 16 (opened to host SQL clients)
-- Mailhog
 
 ## Packages 📦
 
@@ -33,5 +32,5 @@ That's all ! Your application should be accessible through : `https://localhost`
 ## Features 👀
 
 This template now benefits from xDebug support ! 🚀  
-Thanks for the PHP_IDE_CONFIG environment variable (see the compose.yaml file), simply configure a PHP Remote Debug session in your IDE and install the [xDebug Helper](https://www.jetbrains.com/help/phpstorm/browser-debugging-extensions.html) browser extension.  
+Thanks for the `$PHP_IDE_CONFIG` environment variable (see the compose.yaml file), simply configure a PHP Remote Debug session in your IDE and install the [xDebug Helper](https://www.jetbrains.com/help/phpstorm/browser-debugging-extensions.html) browser extension.  
 Happy debugging ! 🐛
